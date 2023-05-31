@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: all 0.5s linear ;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top:6rem;
+    scroll-behavior:smooth;
+}
+.btn{
+    display:inline-block;
+    margin-top: 1rem;
+    background: orange;
+    color: #fff;
+    padding: .7rem 1rem;
+    border: .2rem solid orange;
+    cursor:pointer;
+    font-size: 1.7rem;
+
+}
+.btn:hover{
+    background: rgba(255,165,0,.2);
+    color:orange;
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 1rem;
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#fff;
+    text-transform: capitalize;
+    padding-left: 13rem;
+}
+header .logo span{
+    color: orange;
+}
+header .navbar a{
+    color:#fff;
+    font-size:1.6rem;
+   margin: 1.5rem;
+    
+}
+header .navbar a:hover{
+    color:orange;
+    font-size: 2.5rem;
+   
+    
+}
+
+header .icons i{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+header .icons i:hover{
+    color:orange;
+}
+header .search-bar-container{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    padding: 1rem 2rem;
+    background: #333;
+    border-top: 0.35rem solid rgba(255,255,255,.2);
+    display:flex;
+    align-items:center ;
+    z-index:1001;
+    
+    display: none;
+
+}
+
+header .search-bar-container #search-bar{
+    width:100%;
+    padding: 1rem;
+    text-transform: none;
+    color:#333;
+    font-size: 1.7rem;
+    border-radius:0.5rem;
+}
+header .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+
+}
+header .search-bar-container label:hover{
+    color:orange;
+}
+.login-form-container {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    min-height: 100vh;
+    width:100%;
+    background: rgba(0,0,0,.7);
+    display: none;
+    align-items: centre;
+    justify-content: centre;
+    transition: all 0.5s linear ;
+
+}
+.login-form-container form{
+    margin-left: 40rem;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    padding:1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+.login-form-container form h3{
+    font-size: 3rem;
+    color:#444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 0;
+} 
+.login-form-container form .box{
+    width:100%;
+    padding: 0.7rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: 0.6rem 0;
+    border: 0.3rem solid rgba(0,0,0,.3);
+}
+.login-form-container form .box:focus{
+    border-color: orange;
+}
+.login-form-container form #remember{
+    margin:2rem 0;
+}
+.login-form-container form label{
+    font-size:1.5rem;
+}
+.login-form-container form .btn{
+    display:block;
+    width:100%;
+}
+.login-form-container form p{
+    padding: 0.3rem 0;
+    font-size: 1.5rem;
+    color:#666;
+}
+.login-form-container form p a{
+    color:orange;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.login-form-container form p a:hover{
+    color:#333;
+    text-decoration: underline;
+
+}
+.login-form-container #form-close{
+    position:absolute;
+    top:5rem;right:3rem;
+    font-size:5rem;
+    color:#fff;
+    cursor: pointer;
+}
+#menu-bar{
+    color: #fff;
+    border: 0.2rem solid #fff;
+    border-radius: .5rem;
+    font-size:3rem;
+    padding:0.2rem 1rem;
+    cursor: pointer;
+    display: none;
+    
+}
+.home{
+    display:flex;
+}
+section{
+    padding-left:50rem;
+    align-items: centre;
+    justify-content: center;
+    flex-flow: column;
+    position:relative;
+    z-index:0;
+    min-height: 100vh;
+}
+.home .content{
+    text-align: centre;
+    align-items: center;
+    margin-right: 10rem;
+    
+}
+.home .content h3{
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+    padding: 2.5rem 0;
+    margin-left: 0rem;
+    position: relative;
+    right: 12rem;
+
+}
+.home .content p{
+    font-size: 2.5rem;
+    color:#fff;
+    
+  
+    position: absolute;
+    left: 40rem;
+    
+}
+.home .vedio-container video{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.home .content .btn{
+    position: absolute;
+    left: 58rem;
+    margin-top: 7rem;
+}
+.heading{
+    text-align:centre;
+    padding:2.5rem 0;
+  
+}
+.heading span{
+    font-size:3.5rem;
+    background:rgba(255,165,0,.2);
+    color:orange;
+    border-radius: .5rem;
+    padding:2rem 1rem;
+    display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }  
+
+
+}
+@media(max-width:991px){
+    header{
+        padding: 0.2rem;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display: flex;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%;right:0;left:0;
+        background: #333;
+        border-top: .1rem solid rgba(255,255,255,.2);
+        padding: 1rem 2rem;
+        display: none;
+
+    }
+    header .navbar a{
+        display:block;
+        border-radius:.5rem;
+        padding: 1.5rem;
+        margin:1.5rem 0;
+        background: #222;
+    }
+    header .logo{
+        padding-left:5rem;
+    }
+}

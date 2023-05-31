@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website projec 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div id="menu-bar" class="fas fa-bars" onclick="open()"></div>
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a class="a" href="#">home</a>
+        <a class="a" href="#">Book</a>
+        <a class="a" href="#">Packages</a>
+        <a class="a" href="#">services</a>
+        <a class="a" href="#">gallery</a>
+        <a class="a" href="#">contact</a>
+    </nav>
+    <div class="icons">
+       <i class="fas fa-search" id="search-btn" onclick="display()"></i>
+       <i class="fas fa-user" id="login-btn" onclick="form()"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+
+        <input type="search" id="search-bar" placeholder="search here....">
+        <label for="searh-bar" class="fas fa-search"></label>
+    </form>
+</header>
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close" onclick="closeform()"></i>
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email..">
+        <input type="email" class="box" placeholder="enter your password..">
+        <input type="submit" class="btn" value="login now">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password ? <a hrea="#">click here</a></p>
+        <P>don't have and account? <a href="#">register now</a></P>
+    </form>
+
+
+</div>
+<section class="home" id="home">
+    <div class="content">
+        <h3>Adventure is worthwhile</h3>
+        <p>discover new places with us, adventure awaits</p>
+        <a href="#" class="btn"> discover more</a>
+    </div>
+    <div class="controls">
+        <span class="video-btn" data-src=""></span>
+    </div>
+    <div class="vedio-container">
+        <video loop autoplay muted="autoplay">
+            <source src="sunrise-7127.mp4 " type="video/mp4" >
+          
+            
+          </video>
+         
+    </div>
+</section>
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+  </section>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
